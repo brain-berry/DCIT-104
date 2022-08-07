@@ -1,0 +1,39 @@
+// Henry Benson Augustus 
+// 10953287
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPrime(int n)
+{
+    if (n <= 1)
+        return false;
+
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            return false;
+
+    return true;
+}
+
+// Function to print primes
+int calculateSum(int n) {
+    int sum = 0;
+    for (int i = 2; i < n; i++) {
+        if (isPrime(i)) {
+            sum = sum + i;
+        }
+    }
+    return sum;
+}
+
+int main()
+{
+    int num;
+    cout << "Enter any number: ";
+    cin >> num;
+
+    int sum = calculateSum(num);
+    cout << "The sum is " << sum << endl;
+
+    return 0;
+}
