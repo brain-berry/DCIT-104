@@ -15,7 +15,7 @@ bool isPrime(int n)
     return true;
 }
 
-// Function to print primes
+// Function to print prime number
 int calculateSum(int n) {
     int sum = 0;
     for (int i = 2; i < n; i++) {
