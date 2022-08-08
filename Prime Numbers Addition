@@ -1,9 +1,10 @@
-// Henry Benson Augustus 
+//  This code is written by Henry Benson Augustus 
 // 10953287
+
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isPrime(int n)
+bool primeNo(int n)
 {
     if (n <= 1)
         return false;
@@ -19,7 +20,7 @@ bool isPrime(int n)
 int calculateSum(int n) {
     int sum = 0;
     for (int i = 2; i < n; i++) {
-        if (isPrime(i)) {
+        if (primeNo(i)) {
             sum = sum + i;
         }
     }
@@ -28,6 +29,7 @@ int calculateSum(int n) {
 
 int main()
 {
+    cout<< "This is a program that finds the sum of all prime numbers before a given number \n" << endl;
     int num;
     cout << "Enter any number: ";
     cin >> num;
